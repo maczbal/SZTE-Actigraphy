@@ -2,9 +2,9 @@
 Python-based web application to preprocess and convert triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of Máté Miklós Perényi-Rimai for his bachelor thesis titled "Aktigráfiás jelek feldolgozását és spektrális analízisét végző webalkalmazás fejlesztése Python környezetben" (2024) under the supervision of Gergely Vadai and Bálint Maczák from the Department of Technical Infromatics, University of Szeged, Hungary.
 
 # How to use
-
+The program can be converted into stand-alone executable with PyInstaller by running the Jupyter Notebook.
 ## Running the program
-- Double-clicking on the executable file (" SZTE-MIT-Actigraphy .exe") will pop up a terminal window.
+- Double-clicking on the executable file (" SZTE-MIT-Actigraphy.exe") will pop up a terminal window.
 - The user interface will then automatically open as a web page in the default web browser. Closing the browser window does not stop the application, the user interface can be reopened from the browser via the web address "127.0.0.1:8055". The application can be shut down permanently by closing the terminal window.
 ## Loading a file
 - On the web page, click on the "Select File" button to load the file to be scanned. The path (folder names) must not contain special characters.
