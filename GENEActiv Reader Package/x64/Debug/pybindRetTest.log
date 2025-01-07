@@ -1,0 +1,39 @@
+﻿  module.cpp
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(84,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(97,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(210,37): warning C4244: '=': conversion from 'double' to 'long', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(211,46): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(211,46): warning C4244:         with
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(211,46): warning C4244:         [
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(211,46): warning C4244:             _Ty=long
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(211,46): warning C4244:         ]
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(212,43): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(212,43): warning C4244:         with
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(212,43): warning C4244:         [
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(212,43): warning C4244:             _Ty=float
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(212,43): warning C4244:         ]
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(213,43): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(213,43): warning C4244:         with
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(213,43): warning C4244:         [
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(213,43): warning C4244:             _Ty=float
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(213,43): warning C4244:         ]
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(214,43): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(214,43): warning C4244:         with
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(214,43): warning C4244:         [
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(214,43): warning C4244:             _Ty=float
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(214,43): warning C4244:         ]
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(215,53): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(215,53): warning C4244:         with
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(215,53): warning C4244:         [
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(215,53): warning C4244:             _Ty=float
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(215,53): warning C4244:         ]
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(216,45): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(216,45): warning C4244:         with
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(216,45): warning C4244:         [
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(216,45): warning C4244:             _Ty=float
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(216,45): warning C4244:         ]
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(251,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(174,50): warning C4101: 'e': unreferenced local variable
+D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\pybindRetTest\module.cpp(242,34): warning C4101: 'e': unreferenced local variable
+     Creating library D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\x64\Debug\pybindRetTest.lib and object D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\x64\Debug\pybindRetTest.exp
+  pybindRetTest.vcxproj -> D:\Google Drive\Work\Python Project\PyBind11-test\VS\pybindRetTest\x64\Debug\pybindRetTest.pyd
