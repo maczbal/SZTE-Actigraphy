@@ -1,5 +1,5 @@
 # SZTE-MIT-Actigraphy
-Python-based web application to preprocess and convert triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of Máté Miklós Perényi Rimai for his bachelor thesis under the supervision of Gergely Vadai and Bálint Maczák from the Department of Technical Infromatics, University of Szeged, Hungary.
+Python-based web application to preprocess and convert triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of Máté Miklós Perényi-Rimai for his bachelor thesis titled "Aktigráfiás jelek feldolgozását és spektrális analízisét végző webalkalmazás fejlesztése Python környezetben" (2024) under the supervision of Gergely Vadai and Bálint Maczák from the Department of Technical Infromatics, University of Szeged, Hungary.
 
 # How to use
 
