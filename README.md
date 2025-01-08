@@ -2,7 +2,7 @@
 Python-based web application to preprocess and convert actigraphic triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of **Máté Miklós Perényi-Rimai** for his bachelor thesis titled "_Aktigráfiás jelek feldolgozását és spektrális analízisét végző webalkalmazás fejlesztése Python környezetben_" (2024) under the supervision of **Gergely Vadai** and **Bálint Maczák** from the **Department of Technical Infromatics, University of Szeged, Hungary**.
 
 # Citing
-If one uses this software, please refer to our article where we collected, categorized and compared the different activity calculation methods prevalent in the literature:<br/>**B. Maczák, G. Vadai, A. Dér, I. Szendi and Z. Gingl, "Detailed analysis and comparison of different activity metrics", PLOS ONE 16 (2021), e0261718, https://doi.org/10.1371/journal.pone.0261718**
+If one uses this software, please refer to our article where we collected, categorized and compared the different activity calculation methods prevalent in the literature:<br/>**B. Maczák, G. Vadai, A. Dér, I. Szendi and Z. Gingl, "_Detailed analysis and comparison of different activity metrics_", PLOS ONE 16 (2021), e0261718, https://doi.org/10.1371/journal.pone.0261718**
 
 # How to use
 The program can be converted into stand-alone executable with PyInstaller by executing the following command in terminal:<br/>
@@ -73,6 +73,6 @@ The program can be converted into stand-alone executable with PyInstaller by exe
 
 ## References
 <a id="1">[1]</a> 
-B. Maczák, G. Vadai, A. Dér, I. Szendi and Z. Gingl, "Detailed analysis and comparison of different activity metrics", PLOS ONE 16 (2021), e0261718, https://doi.org/10.1371/journal.pone.0261718 <br/>
+B. Maczák, G. Vadai, A. Dér, I. Szendi and Z. Gingl, "_Detailed analysis and comparison of different activity metrics_", PLOS ONE 16 (2021), e0261718, https://doi.org/10.1371/journal.pone.0261718 <br/>
 <a id="2">[2]</a> 
-B. Maczák, Z. Gingl and G. Vadai, “General spectral characteristics of human activity and its inherent scale-free fluctuations”, SCIENTIFIC REPORTS 14 (2024), 2604, https://doi.org/10.1038/s41598-024-52905-8
+B. Maczák, Z. Gingl and G. Vadai, "_General spectral characteristics of human activity and its inherent scale-free fluctuations_", SCIENTIFIC REPORTS 14 (2024), 2604, https://doi.org/10.1038/s41598-024-52905-8
