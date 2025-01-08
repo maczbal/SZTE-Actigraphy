@@ -1,8 +1,8 @@
 # SZTE-MIT-Actigraphy
-Python-based web application to preprocess and convert actigraphic triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of Máté Miklós Perényi-Rimai for his bachelor thesis titled "Aktigráfiás jelek feldolgozását és spektrális analízisét végző webalkalmazás fejlesztése Python környezetben" (2024) under the supervision of Gergely Vadai and Bálint Maczák from the Department of Technical Infromatics, University of Szeged, Hungary.
+Python-based web application to preprocess and convert actigraphic triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of **Máté Miklós Perényi-Rimai** for his bachelor thesis titled "Aktigráfiás jelek feldolgozását és spektrális analízisét végző webalkalmazás fejlesztése Python környezetben" (2024) under the supervision of **Gergely Vadai** and **Bálint Maczák** from the **Department of Technical Infromatics, University of Szeged, Hungary**.
 
 # Citing
-If one uses this software, please refer to our article where we collected, categorized and compared the different activity calculation methods prevalent in the literature:<br/>B. Maczák, G. Vadai, A. Dér, I. Szendi and Z. Gingl, "Detailed analysis and comparison of different activity metrics", PLOS ONE 16 (2021), e0261718, https://doi.org/10.1371/journal.pone.0261718
+If one uses this software, please refer to our article where we collected, categorized and compared the different activity calculation methods prevalent in the literature:<br/>**B. Maczák, G. Vadai, A. Dér, I. Szendi and Z. Gingl, "Detailed analysis and comparison of different activity metrics", PLOS ONE 16 (2021), e0261718, https://doi.org/10.1371/journal.pone.0261718**
 
 # How to use
 The program can be converted into stand-alone executable with PyInstaller by executing the following command in terminal:<br/>
@@ -42,10 +42,10 @@ python -m PyInstaller --onefile --name “SZTE-MIT-Actigraphy” "Actigraphy.py"
 - Meaning of fields in filenames
     -  _**TS**_/_**PSD**_: Indicates whether it is a time series or a spectrum.
     -  _**META**_/_**DATA**_: Indicates whether it is a data file or a metafile.
-    -  _**Unique identifier**_: a part extracted from the name or data of the input file. E.g., subject ID if given in the raw measurement data.
+    -  _**Unique identifier**_: A part extracted from the name or data of the input file. E.g., subject ID if given in the raw measurement data.
     -  _**Cutstart**_ and _**Cutend**_: Indicates the time range that is selected on the acceleration or activity signal (start and end times, without year-month to shorten the file name). For TS, the data file contains the signal segment in this range, and for PSD, the spectrum (and fit) calculated from the signal segment in this range.
     -  _**DT**_: The time elapsed between successive data points in a temporal signal, this is 1/fs for an acceleration signal and the length of the epoch itself in seconds for an activity signal.
-    -  _**FLO**_ and _**FHI**_: for PSD, these are the lower and upper frequencies that define the range of the fitting, there is no such field for TS.
+    -  _**FLO**_ and _**FHI**_: For PSD, these are the lower and upper frequencies that define the range of the fitting, there is no such field for TS.
     -  _**BPD**_: Indicates the resolution of the bin-averaged spectrum (how many bins per decade), there is no such field for TS.
 ## Metafile structure (META)
 ### Fields both for TS and PSD
@@ -61,11 +61,11 @@ python -m PyInstaller --onefile --name “SZTE-MIT-Actigraphy” "Actigraphy.py"
 - _**Timestamp of First Datapoint**_: If no data is recorded at the exact time of the start of the cut-off, the time stamp of the nearest subsequent datapoint is used.
 - _**Elapsed Time Between Datapoints [s]**_: The time elapsed between successive data points in a time signal. Similar to the filename, for an acceleration signal 1/fs, and for an activity signal the length of the epoch itself in seconds.
 ### Extra fields for PSD
-- _**Bins per Decade**_: the resolution of spectrum averaging.
-- _**Fitting Interval LO Frequency [Hz]**_: the lower frequency of the fitting range.
-- _**Fitting Interval HI Frequency [Hz]**_: similarly as above, the upper frequency of the fitting range.
-- _**Slope**_: the slope of the fitted line (i.e. the estimated value of the exponent).
-- _**Intercept**_: y-axis intercept of the fitted line.
+- _**Bins per Decade**_: The resolution of spectrum averaging.
+- _**Fitting Interval LO Frequency [Hz]**_: The lower frequency of the fitting range.
+- _**Fitting Interval HI Frequency [Hz]**_: Similarly as above, the upper frequency of the fitting range.
+- _**Slope**_: The slope of the fitted line (i.e. the estimated value of the exponent).
+- _**Intercept**_: Y-axis intercept of the fitted line.
 - _**R2**_: Goodness of fit ($R^2$).
 ## Datafile structure (DATA)
 - For TS, this csv file consists of 1 or 3 columns and contains only acceleration or activity values. For example, exported acceleration data preprocessed using UFXYZ consists of 3 columns (1-1 column for each axis, order: x, y, z), but for UFM or activity signals, it is only 1 column of amplitude values. A time column is not needed because it can be constructed from the timestamp of the first data point and the DT. These two information can be found in the associated metafile (META), see above.
