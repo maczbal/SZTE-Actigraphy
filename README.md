@@ -6,9 +6,9 @@ If one uses this software, please refer to our article where we collected, categ
 
 # How to use
 The program can be converted into stand-alone executable with PyInstaller by executing the following command in terminal:<br/>
-```python -m PyInstaller --onefile --name “SZTE-MIT-Actigraphy” "Actigraphy.py"```
+```python -m PyInstaller --onefile --name “SZTE-Actigraphy” "Actigraphy.py"```
 ## Running the program
-- Double-clicking on the created executable file (i.e., _SZTE-MIT-Actigraphy.exe_) will pop up a terminal window.
+- Double-clicking on the created executable file (i.e., _SZTE-Actigraphy.exe_) will pop up a terminal window.
 - The user interface will then automatically open as a web page in the default web browser. Closing the browser window does not stop the application, the user interface can be reopened from the browser via the web address "127.0.0.1:8055". The application can be shut down permanently by closing the terminal window.
 ## Loading a file
 - On the web page, click on the _**Select File**_ button to select the file to be processed. The path of the file must not contain special characters.
