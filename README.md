@@ -1,4 +1,4 @@
-# SZTE-MIT-Actigraphy
+# SZTE-Actigraphy
 Python-based web application to preprocess and convert actigraphic triaxial acceleration signals into activity data, and to spectrally analyse them. The software is the work of **Máté Miklós Perényi-Rimai** for his bachelor thesis titled "_Aktigráfiás jelek feldolgozását és spektrális analízisét végző webalkalmazás fejlesztése Python környezetben_" (2024) under the supervision of **Gergely Vadai** and **Bálint Maczák** from the **Department of Technical Infromatics, University of Szeged, Hungary**.
 
 # Citing
@@ -13,7 +13,7 @@ The program can be converted into stand-alone executable with PyInstaller by exe
 ## Loading a file
 - On the web page, click on the _**Select File**_ button to select the file to be processed. The path of the file must not contain special characters.
     - Supported common file formats:
-        - GENEActiv binary files based on the GGIRread (https://github.com/wadpac/GGIRread) R package, whose functionality was wrapped into a Python package and shared in the folder _GENEActiv Reader Package_. To install the package, navigate into the folder and execute the following command in terminal: <br/>```pip install .```
+        - GENEActiv binary files based on the GGIRread (https://github.com/wadpac/GGIRread) R package, whose functionality was wrapped into a Python package and shared in the folder _GENEActiv Reader Package_. **You must install this package before creating the executable**, for this, navigate into the folder and execute the following command in terminal: <br/>```pip install .```
         - EDF files through pyEDFlib Python package.
 - Once the file is selected, the reading process starts immediately, indicated by a loading animation. The process typically takes 20-60 seconds. When the reading is finished, the raw acceleration data recorded along three axes is displayed. In the legend of the graph, you can see how the data of the different axes are represented in different colours, by clicking on one of its particular element you can hide/show the data of the given axis. To zoom in, select the magnifying glass icon in the toolbar of the graph in the top right corner, click in the graph and hold down the button while selecting the area to be zoomed in: dragging the cursor diagonally will zoom in on a rectangle, dragging horizontally or vertically will zoom in along the given axis. Click on the house icon to reset the view to default. For larger datasets, graphs may display a dynamically resampled data depending on the zoom level for optimal run speed, but this only affects visualisation, not any subsequent operations. By hovering the mouse pointer over a single data point, the exact time and amplitude value can be read.
 ## Preprocessing the acceleration data and optional activity calculation
@@ -44,7 +44,7 @@ The program can be converted into stand-alone executable with PyInstaller by exe
     -  _**META**_/_**DATA**_: Indicates whether it is a data file or a metafile.
     -  _**Unique identifier**_: A part extracted from the name or data of the input file. E.g., subject ID if given in the raw measurement data.
     -  _**Cutstart**_ and _**Cutend**_: Indicates the time range that is selected on the acceleration or activity signal (start and end times, without year-month to shorten the file name). For TS, the data file contains the signal segment in this range, and for PSD, the spectrum (and fit) calculated from the signal segment in this range.
-    -  _**DT**_: The time elapsed between successive data points in a temporal signal, this is 1/fs for an acceleration signal and the length of the epoch itself in seconds for an activity signal.
+    -  _**DT**_: The time elapsed between successive data points in a temporal signal, this is $1\fs$ for an acceleration signal and the length of the epoch itself in seconds for an activity signal.
     -  _**FLO**_ and _**FHI**_: For PSD, these are the lower and upper frequencies that define the range of the fitting, there is no such field for TS.
     -  _**BPD**_: Indicates the resolution of the bin-averaged spectrum (how many bins per decade), there is no such field for TS.
 ## Metafile structure (META)
@@ -59,7 +59,7 @@ The program can be converted into stand-alone executable with PyInstaller by exe
 - _**Examination Interval Length**_: The total length of the cut-off period (hours, minutes, seconds).
 ### Extra fields for TS
 - _**Timestamp of First Datapoint**_: If no data is recorded at the exact time of the start of the cut-off, the time stamp of the nearest subsequent datapoint is used.
-- _**Elapsed Time Between Datapoints [s]**_: The time elapsed between successive data points in a time signal. Similar to the filename, for an acceleration signal 1/fs, and for an activity signal the length of the epoch itself in seconds.
+- _**Elapsed Time Between Datapoints [s]**_: The time elapsed between successive data points in a time signal. Similar to the filename, for an acceleration signal $1\fs$, and for an activity signal the length of the epoch itself in seconds.
 ### Extra fields for PSD
 - _**Bins per Decade**_: The resolution of spectrum averaging.
 - _**Fitting Interval LO Frequency [Hz]**_: The lower frequency of the fitting range.
