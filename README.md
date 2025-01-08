@@ -44,7 +44,7 @@ The program can be converted into stand-alone executable with PyInstaller by exe
     -  _**META**_/_**DATA**_: Indicates whether it is a data file or a metafile.
     -  _**Unique identifier**_: A part extracted from the name or data of the input file. E.g., subject ID if given in the raw measurement data.
     -  _**Cutstart**_ and _**Cutend**_: Indicates the time range that is selected on the acceleration or activity signal (start and end times, without year-month to shorten the file name). For TS, the data file contains the signal segment in this range, and for PSD, the spectrum (and fit) calculated from the signal segment in this range.
-    -  _**DT**_: The time elapsed between successive data points in a temporal signal, this is $1\fs$ for an acceleration signal and the length of the epoch itself in seconds for an activity signal.
+    -  _**DT**_: The time elapsed between successive data points in a temporal signal, this is 1\fs for an acceleration signal and the length of the epoch itself in seconds for an activity signal.
     -  _**FLO**_ and _**FHI**_: For PSD, these are the lower and upper frequencies that define the range of the fitting, there is no such field for TS.
     -  _**BPD**_: Indicates the resolution of the bin-averaged spectrum (how many bins per decade), there is no such field for TS.
 ## Metafile structure (META)
@@ -59,7 +59,7 @@ The program can be converted into stand-alone executable with PyInstaller by exe
 - _**Examination Interval Length**_: The total length of the cut-off period (hours, minutes, seconds).
 ### Extra fields for TS
 - _**Timestamp of First Datapoint**_: If no data is recorded at the exact time of the start of the cut-off, the time stamp of the nearest subsequent datapoint is used.
-- _**Elapsed Time Between Datapoints [s]**_: The time elapsed between successive data points in a time signal. Similar to the filename, for an acceleration signal $1\fs$, and for an activity signal the length of the epoch itself in seconds.
+- _**Elapsed Time Between Datapoints [s]**_: The time elapsed between successive data points in a time signal. Similar to the filename, for an acceleration signal 1\fs, and for an activity signal the length of the epoch itself in seconds.
 ### Extra fields for PSD
 - _**Bins per Decade**_: The resolution of spectrum averaging.
 - _**Fitting Interval LO Frequency [Hz]**_: The lower frequency of the fitting range.
